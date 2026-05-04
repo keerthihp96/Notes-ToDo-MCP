@@ -1,0 +1,16 @@
+[project]
+name = "notes-todo-mcp"
+version = "0.1.0"
+description = "Notes and Todo MCP Server for Claude"
+requires-python = ">=3.12"
+
+dependencies = [
+    "mcp",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
